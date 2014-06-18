@@ -1,2 +1,4 @@
 *.pyc
 *.sw[op]
+django_foundation_forms.egg-info/
+dist/

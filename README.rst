@@ -2,13 +2,6 @@ django-foundation-forms
 =======================
 Django templates for Zurb Foundation forms.
 
-Requirements:
-
-* `HamlPy <https://github.com/jessemiller/HamlPy>`_
-
-Example
--------
-
 This module provides some template tags to make it easier to deal with forms
 markup. In contrast to the (excellent)
 `crispy-forms <https://github.com/maraujop/django-crispy-forms>`_ app,
@@ -18,13 +11,23 @@ just plain ol` templates.
 You have the following template tags (nesting shows structure):
 
 * {% form %}
-  - {% form_header %}
-    - {% form_field %}
-      - {% form_field_label %}
-      - {% form_field_widget %}
-  - {% form_footer %}
 
-In that way, if you want to output the whole form, just do:
+  * {% form_header %}
+
+    * {% form_field %}
+
+      * {% form_field_label %}
+      * {% form_field_widget %}
+  * {% form_footer %}
+
+Requirements:
+
+* `HamlPy <https://github.com/jessemiller/HamlPy>`_
+
+Example
+-------
+
+If you want to output the whole form, just do:
 
 ::
 

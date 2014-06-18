@@ -1,0 +1,6 @@
+- load foundation_forms
+- load common_tags
+%form{'method': 'post', enctype: '{% if form.is_multipart %}multipart/form-data{% else %}application/x-www-form-urlencoded{% endif %}'}
+    - form_header form
+    - form_fields form
+    - form_footer form submit_title=submit_title

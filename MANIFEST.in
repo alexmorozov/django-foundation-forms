@@ -1,0 +1,3 @@
+include README
+
+recursive-include foundation_forms/templates *.haml

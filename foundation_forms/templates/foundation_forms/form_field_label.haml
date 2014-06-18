@@ -1,0 +1,7 @@
+- load foundation_forms
+- if not field|is_checkbox
+    %label{for: '{{ field.auto_id }}', class: '{% if field.errors %}error{% endif %}'}
+        {{ field.label }}
+        - if field.field.required
+            %span.required *
+        :

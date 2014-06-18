@@ -1,0 +1,20 @@
+- load foundation_forms
+- if field|is_checkbox
+    %label{for: '{{ field.auto_id }}', class: '{% if field.errors %}error{% endif %}'}
+        .row
+            .large-1.columns
+                = field
+            .large-11.columns
+                {{ field.label }}
+                - if field.field.required
+                    %span.required *
+- else
+    - if field.help_text
+        %small
+            = field.help_text
+    = field
+- if field.errors
+    %small.error
+        - for error in field.errors
+            = error|escape
+            %br

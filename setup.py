@@ -26,6 +26,9 @@ setup(
         'Django>=1.5',
         'hamlpy',
     ],
+    package_data={
+        'foundation_forms': ['templates/*', ],
+    },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',

@@ -14,6 +14,8 @@ You have the following template tags (nesting shows structure):
 
   * {% form_header %}
 
+  * {% form_fields %}
+
     * {% form_field %}
 
       * {% form_field_label %}

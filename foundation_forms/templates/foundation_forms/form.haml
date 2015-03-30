@@ -1,5 +1,5 @@
 - load foundation_forms
-%form{'method': 'post', enctype: '{% if form.is_multipart %}multipart/form-data{% else %}application/x-www-form-urlencoded{% endif %}'}
+%form{'method': 'post', enctype: '{% if form.is_multipart %}multipart/form-data{% else %}application/x-www-form-urlencoded{% endif %}', ng-non-bindable: None}
     - form_header form
     - form_fields form
     - form_footer form submit_title=submit_title
